@@ -1,26 +1,34 @@
 # Adaptive-Crypto-RL: A Reinforcement Learning Framework for Dynamic Lightweight Cryptography Selection in MapReduce
 
-## 📌 Overview
-Adaptive-Crypto-RL is an AI-driven extension for the MR-LWT (MapReduce LightWeight Cryptography) architecture. It replaces static cryptographic algorithm selection with an intelligent agent based on a **Deep Q-Network (DQN)**. The system evaluates cluster metrics (CPU, RAM, network load) and data sensitivity in real-time to select the optimal algorithm from a pool (Chacha20, Rabbit, NOEKEON, AES-CTR).
+This repository contains the implementation, experimental data, and results for the paper **"Adaptive-Crypto-RL: A Reinforcement Learning Framework for Dynamic Lightweight Cryptography Selection in MapReduce"**.
 
-## 🚀 Key Features
-- **Dynamic Selection:** Automates the choice of cryptographic primitives based on real-time cluster states.
-- **Resource-Aware:** Optimizes the trade-off between execution speed, security level, and resource consumption.
-- **Enterprise Security:** Integrated support for Hadoop KMS and Kerberos authentication.
-- **Compatibility:** Fully backward compatible with existing HDFS/MapReduce pipelines.
+## Project Structure
 
-## 📊 Experimental Results
-Our experiments demonstrate:
-- Up to **75% performance improvement** compared to standard AES(CBC).
-- Over **50% gain** compared to HC-128 for large-scale datasets (1GB+).
-- Negligible AI inference overhead (2-4 seconds).
+- `code/`: Implementation of the Deep Q-Network (DQN) agent and the MapReduce encryption/decryption simulation scripts.
+- `data/`: Sample datasets and configuration files used for experiments.
+- `results/`: Visualization of training convergence, performance improvements, and resource usage (CPU/RAM).
 
-## 📁 Repository Structure
-- `/code`: DQN Agent implementation (`dqn_agent.py`) and simulation scripts.
-- `/results`: Visualization of training convergence and performance heatmaps.
-- `/data`: Sample configuration and metadata splits used for evaluation.
+## Abstract
 
-## 🛠 Installation & Usage
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/Adaptive-Crypto-RL.git
+Secure large-scale data processing (Big Data) in distributed environments such as Hadoop MapReduce poses a significant ongoing challenge of balancing performance and security. This framework proposes **Adaptive-Crypto-RL**, a dynamic selection system based on a Deep Q-Network (DQN) that evaluates the cluster state in real-time to select the optimal lightweight cryptographic algorithm.
+
+## Getting Started
+
+### Prerequisites
+- Python 3.8+
+- PyTorch / TensorFlow
+- NumPy, Pandas, Matplotlib
+
+### Installation
+```bash
+git clone https://github.com/marwakhadji/Adaptive-Crypto-RL.git
+cd Adaptive-Crypto-RL
+pip install -r requirements.txt
+```
+
+## Citation
+If you use this work in your research, please cite our paper:
+> Khadji, M., et al. (2026). Adaptive-Crypto-RL: A Reinforcement Learning Framework for Dynamic Lightweight Cryptography Selection in MapReduce. *MDPI Cryptography*.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
