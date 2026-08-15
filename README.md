@@ -28,7 +28,7 @@ pip install -r requirements.txt
 
 ## Citation
 If you use this work in your research, please cite our paper:
-> Khadji, M., et al. (2026). Adaptive-Crypto-RL: A Reinforcement Learning Framework for Dynamic Lightweight Cryptography Selection in MapReduce. *MDPI Cryptography*.
+> Khadji, M., et al. (2026). Adaptive-Crypto-RL: A Reinforcement Learning Framework for Dynamic Lightweight Cryptography Selection in MapReduce.
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
